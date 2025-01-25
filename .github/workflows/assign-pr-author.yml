@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Assign PR author
-        uses: ./.github/actions
+        uses: ./github_action/.github/actions
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
