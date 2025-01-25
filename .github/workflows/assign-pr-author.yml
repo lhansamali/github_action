@@ -11,6 +11,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Assign PR author
-        uses: ./github_action/.github/actions
+        uses: ./.github/actions
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
