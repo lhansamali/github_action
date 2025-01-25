@@ -1,0 +1,14 @@
+name: Assign PR Author as Assignee
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  assign-author:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign PR author
+        uses: ./.github/actions
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
