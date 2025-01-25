@@ -1,0 +1,9 @@
+name: "Assign PR Author as Assignee"
+description: "Assign the PR author as the assignee."
+inputs:
+  github-token:
+    description: "GitHub token"
+    required: true
+runs:
+  using: "node16"
+  main: "index.js"
